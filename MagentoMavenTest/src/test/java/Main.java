@@ -13,7 +13,7 @@ public class Main {
 	WebDriver driver;
 	@BeforeMethod
 	public void open() {
-		driver=new FirefoxDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
